@@ -32,6 +32,8 @@ router.post("/adressrecord", async (req, res) => {
   }
 });
 
-router.get("/distance/:userId", async (req, res) => {});
+router.get("/distance/:userId", async (req, res) => {
+  //retornar as menores distancias
+});
 
 module.exports = (app) => app.use("/user", router);
