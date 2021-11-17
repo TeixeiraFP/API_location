@@ -1,4 +1,4 @@
-const mongoose = required("../database/db");
+const mongoose = require("../database/db");
 
 const AdressSchema = new mongoose.Schema({
   street: {
@@ -21,7 +21,7 @@ const AdressSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  User: {
+  user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
     required: true,
@@ -35,4 +35,4 @@ const AdressSchema = new mongoose.Schema({
 
 const Adress = mongoose.model("Adress", AdressSchema);
 
-module.exports = Ticket;
+module.exports = Adress;

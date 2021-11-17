@@ -12,3 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.listen(port, () => {
   console.log(`server running in ${port}`);
 });
+
+const routerUserAdress = require("./controllers/UserAdressController");
+
+routerUserAdress(app);

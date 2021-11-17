@@ -33,3 +33,5 @@ router.post("/adressrecord", async (req, res) => {
 });
 
 router.get("/user", async (req, res) => {});
+
+module.exports = (app) => app.use("/user", router);
